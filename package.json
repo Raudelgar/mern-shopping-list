@@ -1,0 +1,17 @@
+{
+  "name": "mern-shopping-list",
+  "version": "1.0.0",
+  "description": "Shopping List App built with MongoDB, ExpressJs, ReactJS and NodeJs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raudel Garcia",
+  "license": "MIT",
+  "dependencies": {
+    "body-parse": "^0.1.0",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.19"
+  }
+}

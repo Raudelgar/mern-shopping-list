@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 
 const app = express();
+const port = process.env.PORT || 5000;
 
 //BodyParser Middleware
 app.use(bodyParser.json());
@@ -13,13 +14,11 @@ const db = require("./config/keys").mongoURI;
 //Connect to Mongo
 mongoose
   .connect(db)
-  .then(() => console.log("MongoDB Connected.."))
+  .then(() => console.log("MongoDB Connected...!"))
   .catch(err => console.log(err));
 
-const port = process.env.PORT || 5000;
-
 app.get("/", (req, res) => {
-  res.send("Hello!");
+  res.send("Hello World!");
 });
 
-app.listen(port, () => console.log(`Server Started on port ${port}`));
+app.listen(port, () => console.log(`Server Started on port ${port}...!`));

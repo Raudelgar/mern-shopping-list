@@ -17,12 +17,13 @@ export default function(state = initialState, action) {
         ...state
       };
     case ADD_ITEM:
-      let newItem = { id: uuid(), name: action.payload };
-      state.items.push(newItem);
       return {
-        ...state
+        ...state,
+        items: [...state.items, action.payload]
       };
     case DELETE_ITEM:
+      //   let arr = state.items.filter(item => item.id !== action.payload);
+      //   state.items = arr;
       return {
         ...state,
         items: state.items.filter(item => item.id !== action.payload)

@@ -13,7 +13,6 @@ import {
 import { connect } from 'react-redux';
 import { addItems } from '../actions/itemActions';
 import PropTypes from 'prop-types';
-import uuid from 'uuid';
 
 class ItemModal extends Component {
 	state = {

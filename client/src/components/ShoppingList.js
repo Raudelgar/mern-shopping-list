@@ -18,6 +18,7 @@ class ShoppingList extends Component {
 
 	render() {
 		const { items } = this.props.item;
+		console.log(items);
 		return (
 			<Container>
 				<ItemModal />

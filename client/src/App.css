@@ -20,6 +20,6 @@
 	transition: opacity 1000ms ease-out;
 }
 
-itemtxt {
+.shopping-list {
 	text-transform: capitalize;
 }

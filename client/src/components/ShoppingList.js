@@ -34,7 +34,7 @@ class ShoppingList extends Component {
 									>
 										&times;
 									</Button>
-									<itemtxt>{name}</itemtxt>
+									{name}
 								</ListGroupItem>
 							</CSSTransition>
 						))}

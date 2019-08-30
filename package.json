@@ -4,10 +4,10 @@
 	"description": "Shopping List App built with MongoDB, ExpressJs, ReactJS and NodeJs",
 	"main": "server.js",
 	"scripts": {
-		"client-install": "npm install --prefix client",
+		"client-install": "cd client npm install",
 		"start": "node server.js",
 		"server": "nodemon server.js",
-		"client": "npm start --prefix client",
+		"client": "cd client npm start",
 		"dev": "concurrently \"npm run server\" \"npm run client\"",
 		"heroku-postbuild": "cd cllient npm install && npm run build"
 	},

@@ -1,2 +1,5 @@
 # Dependency directories
 node_modules/
+
+#IOS temp files
+.DS_Store

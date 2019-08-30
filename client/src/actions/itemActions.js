@@ -26,8 +26,8 @@ export const deleteItem = id => dispatch => {
 			{
 				type: DELETE_ITEM,
 				payload: id
-			},
-			console.log(res.data)
+			}
+			// console.log(res.data)
 		)
 	);
 };

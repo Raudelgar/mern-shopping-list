@@ -4,7 +4,6 @@ import {
 	DELETE_ITEM,
 	ITEMS_LOADING
 } from '../actions/types';
-import { stat } from 'fs';
 
 const initialState = {
 	items: [],

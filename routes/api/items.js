@@ -34,7 +34,7 @@ router.post('/', (req, res) => {
  * @access  Publc
  */
 router.delete('/:id', (req, res) => {
-	console.log(req.params);
+	// console.log(req.params);
 	Item.findById(req.params.id)
 		.then(item => item.remove().then(() => res.json({ success: true })))
 		.catch(err => res.status(404).json({ success: false }));

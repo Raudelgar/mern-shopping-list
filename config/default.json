@@ -1,0 +1,4 @@
+{
+	"mongoURI": "mongodb+srv://admin:admin123@sandbox-jkjjl.mongodb.net/test?retryWrites=true",
+	"jwtSecret": "fsl_jwt_secret"
+}

@@ -3,3 +3,6 @@ node_modules/
 
 #IOS temp files
 .DS_Store
+
+#vscode debug
+.vscode/

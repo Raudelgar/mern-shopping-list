@@ -6,7 +6,7 @@ const config = require('config');
 const app = express();
 const port = process.env.PORT || 5000;
 
-//BodyParser Middleware
+//Middleware
 app.use(express.json());
 
 //DB Config
@@ -16,7 +16,8 @@ const db = config.get('mongoURI');
 mongoose
 	.connect(db, {
 		useNewUrlParser: true,
-		useCreateIndex: true
+		useCreateIndex: true,
+		useUnifiedTopology: true
 	})
 	.then(() => console.log('MongoDB Connected...!'))
 	.catch(err => console.log(err));
